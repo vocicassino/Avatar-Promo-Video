@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>AvatarSpot AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>AvatarSpot AI</h1>
+  <p>Crea testi video per promuovere prodotti con avatar.</p>
+
+  <input id="nome" placeholder="Nome prodotto">
+  <textarea id="descrizione" placeholder="Descrizione prodotto"></textarea>
+  <input id="prezzo" placeholder="Prezzo">
+  
+  <select id="target">
+    <option>Clienti generici</option>
+    <option>Giovani</option>
+    <option>Famiglie</option>
+    <option>Aziende</option>
+    <option>Commercianti</option>
+  </select>
+
+  <select id="stile">
+    <option>Professionale</option>
+    <option>Divertente</option>
+    <option>Emozionale</option>
+    <option>Persuasivo</option>
+  </select>
+
+  <select id="durata">
+    <option>30 secondi</option>
+    <option>60 secondi</option>
+  </select>
+
+  <button onclick="genera()">Genera contenuto</button>
+
+  <div id="risultato" class="result"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
